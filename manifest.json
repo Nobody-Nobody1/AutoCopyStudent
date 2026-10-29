@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "AutoCopyStudent",
+  "version": "1.0.0",
+  "description": "A basic extension to automate creating a copy for students",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+   {
+     "matches": ["https://classroom.google.com/*"],
+     "js": ["content-script.js"]
+   }
+ ]
+}
